@@ -1,0 +1,82 @@
+<template>
+  <div >
+    <div>
+      <h1 class="text-2xl font-semibold ">Dimas Ikbalul Aulia</h1>
+      <div class=" text-sm mt-4  font-semibold">
+        <span>
+          <a href="https://maps.app.goo.gl/hafU6VBEdUqpPZGFA" target="_blank" class="text-red-700">
+            📍 Bangkalan, Indonesia 🇮🇩
+          </a>
+          |  
+        </span>
+         Human | Web Developer | A New Husband 💍
+      </div>
+      <div class="flex mt-7">
+        <div class="text-sm ">
+          I am a web developer for 5 years experience. Proficient in building scalable web applications and adept at
+  problem-solving within agile environments. Specializing in technologies like Node.js, Vue.js, Laravel, Redis,
+  and PostgreSQL.
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12">
+      <h2 class="text-xl font-semibold ">Skills</h2>
+      <ul class="text-sm mt-5">
+        <li class="flex mb-3" v-for="(item,index) in keySkills" :key="index" >
+          <div class="mr-2">🔧</div> 
+          <div>{{item}}</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mt-12">
+      <h2 class="text-xl font-semibold ">Works Experience</h2>
+      <ul class="text-sm mt-5">
+        <li class="flex mb-3" v-for="(item,index) in workExp" :key="index">
+        <div class="mr-10">{{item.period}}</div> 
+          <div>{{item.role}} at {{item.company}}</div>
+        </li>
+
+      </ul>
+    </div>
+    
+  </div>
+</template>
+<script>
+export default {
+  data(){
+    return{
+      keySkills: [
+        "Node.Js", "Express.Js", "Vue.Js" , "PHP", "Laravel", "PostgreSQL", "Redis", "Go"
+      ],
+      workExp: [
+        {
+          period: 'Apr 2022 - Dec 2023',
+          company: 'PT Elnusa Tbk',
+          role: 'Full Stack Web Developer'
+        },
+        {
+          period: 'Jul 2020 - Nov 2020',
+          company: 'Gentasoft',
+          role: 'Full Stack Web Developer'
+        },
+        {
+          period: 'Oct 2019 - Dec 2019',
+          company: 'PT Sinergi Informatika Semen Indonesia (SISI)',
+          role: 'Full Stack Web Developer'
+        },
+        {
+          period: 'Jan 2018 - Feb 2018',
+          company: 'PT Pertamina (Persero) MOR V Surabaya',
+          role: 'Web Developer Intern'
+        },
+      ],
+      year: "-"
+    }
+  },
+  mounted() {
+    this.year = new Date().getFullYear()
+  }
+}
+</script>
