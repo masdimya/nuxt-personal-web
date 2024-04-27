@@ -37,7 +37,16 @@
         <div class="mr-10">{{item.period}}</div> 
           <div>{{item.role}} at {{item.company}}</div>
         </li>
+      </ul>
+    </div>
 
+    <div class="mt-12">
+      <h2 class="text-xl font-semibold ">Last Project</h2>
+      <ul class="text-sm mt-5">
+        <li class="flex mb-3" v-for="(item,index) in projectExp" :key="index">
+        <div class="mr-10">{{item.year}}</div>
+          <a  class="underline font-semibold" :href="`/projects/${item.slug}`">{{item.title}}</a> 
+        </li>
       </ul>
     </div>
     
@@ -70,6 +79,23 @@ export default {
           period: 'Jan 2018 - Feb 2018',
           company: 'PT Pertamina (Persero) MOR V Surabaya',
           role: 'Web Developer Intern'
+        },
+      ],
+      projectExp: [
+        {
+          slug : 'zeo-education-website',
+          title: 'Zeo Education Website',
+          year: '2024' 
+        },
+        {
+          slug : 'bangkalan-smartcity',
+          title: 'Bangkalan Smart City',
+          year: '2023' 
+        },
+        {
+          slug : 'smansaka-web',
+          title: 'Senior High School Official Website',
+          year: '2023' 
         },
       ],
       year: "-"
