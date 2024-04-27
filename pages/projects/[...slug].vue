@@ -1,11 +1,11 @@
 <template>
-  <main>
+  <main class="contentdoc">
     <ContentDoc />
   </main>
 </template>
 <style lang="postcss" >
-  .nuxt-content > h1{
-      color: red;
+  .contentdoc h1{
+    @apply font-bold mb-7
 
   }
 </style>
