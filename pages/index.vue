@@ -94,8 +94,33 @@ export default {
         },
         {
           slug : 'smansaka-web',
-          title: 'Senior High School Official Website',
+          title: 'SMAN 1 Kamal Official Website',
           year: '2023' 
+        },
+        {
+          slug : 'assalam-islamic-school',
+          title: 'Assalam Islamic School Management App',
+          year: '2022' 
+        },
+        {
+          slug : 'pos-hardware-store',
+          title: 'Hardware Store Point of Sales (Pos)',
+          year: '2020' 
+        },
+        {
+          slug : 'gesture-recognition',
+          title: 'Indonesian Gesture Recognition Web Application',
+          year: '2020' 
+        },
+        {
+          slug : 'mad-covid',
+          title: 'Mad Covid Whatsapp Bot',
+          year: '2020' 
+        },
+        {
+          slug : 'arrabiyyan',
+          title: 'Arrabiyyan - Learning Arabic With Augmented Reality',
+          year: '2018' 
         },
       ],
       year: "-"
