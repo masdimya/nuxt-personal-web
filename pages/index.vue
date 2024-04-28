@@ -31,6 +31,16 @@
     </div>
 
     <div class="mt-12">
+      <h2 class="text-xl font-semibold ">Education</h2>
+      <ul class="text-sm mt-5">
+        <li class="flex mb-3" v-for="(item,index) in education" :key="index">
+        <div class="mr-10">{{item.year}}</div> 
+          <div>{{item.name}}</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mt-12">
       <h2 class="text-xl font-semibold ">Works Experience</h2>
       <ul class="text-sm mt-5">
         <li class="flex mb-3" v-for="(item,index) in workExp" :key="index">
@@ -122,6 +132,16 @@ export default {
           title: 'Arrabiyyan - Learning Arabic With Augmented Reality',
           year: '2018' 
         },
+      ],
+      education: [
+        {
+          name: "NodeJs Superbootcamp By Sanbercode",
+          year: "2021"
+        },
+        {
+          name: "Bachelor Computer Science in Universitas Trunojoyo Madura ( GPA : 3.56 / 4.00 )",
+          year: "2019"
+        }
       ],
       year: "-"
     }
