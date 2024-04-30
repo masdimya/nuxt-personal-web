@@ -1,7 +1,7 @@
 <template>
   <div >
     <div>
-      <h1 class="text-2xl font-semibold ">Dimas Ikbalul Aulia</h1>
+      <h1 class="text-2xl font-semibold ">Dimas Ikbalul Aulia</h1>      
       <div class=" text-sm mt-4  font-semibold">
         <span>
           <a href="https://maps.app.goo.gl/hafU6VBEdUqpPZGFA" target="_blank" class="text-red-700">
@@ -18,6 +18,25 @@
   and PostgreSQL.
         </div>
       </div>
+    </div>
+
+    <div class="mt-12">
+      <h2 class="text-xl font-semibold ">Contacts</h2>
+      <ul class="text-sm mt-5">
+        <li class="flex mb-3" >
+          <div class="mr-2">💌</div> 
+          <a class="underline font-semibold" mailto="dimas6597@gmail.com">dimas6597@gmail.com</a>
+        </li>
+        <li class="flex mb-3" >
+          <div class="mr-2">📖</div> 
+          <a class="underline font-semibold" href="https://www.linkedin.com/in/dimasikbal/">Linkedin</a>
+        </li>
+        <li class="flex mb-3" >
+          <div class="mr-2">😽</div> 
+          <a class="underline font-semibold" href="https://github.com/masdimya">Github</a>
+        </li>
+        
+      </ul>
     </div>
 
     <div class="mt-12">

@@ -1,6 +1,16 @@
 <template>
-  <main class="contentdoc">
-    <ContentDoc />
+  <main>
+    <div class="mb-12">
+      <a class="flex " href="/">
+      <img src="/images/arleft.svg" alt="" srcset="">
+      <div class="ml-2 font-bold text-xl ">
+        Back
+      </div>
+       </a>
+    </div>
+    <div class="contentdoc">
+      <ContentDoc />
+    </div>
   </main>
 </template>
 <style lang="postcss" >

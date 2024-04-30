@@ -6,3 +6,11 @@
     <Footer />
   </div>
 </template>
+<script setup lang="ts">
+useHead({
+  title: 'Welcome To My (simple) Website | Dimas Ikbalul Aulia\'s Website',
+  meta: [
+    { name: 'description', content: 'My amazing site.' }
+  ],
+})
+</script>
