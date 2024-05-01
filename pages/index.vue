@@ -90,7 +90,7 @@ export default {
       ],
       workExp: [
         {
-          period: 'Apr 2022 - Dec 2023',
+          period: 'Apr 2021 - Dec 2023',
           company: 'PT Elnusa Tbk',
           role: 'Full Stack Web Developer'
         },
