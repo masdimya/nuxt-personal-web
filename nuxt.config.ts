@@ -2,12 +2,17 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/tailwindcss',
+    'shadcn-nuxt',
+    '@nuxtjs/color-mode',
+    '@vueuse/nuxt'
   ],
   googleFonts: {
     /* module options */
     families: {
       'IBM+Plex+Mono': true, // Enable IBM Plex Mono font
+      Geist: [100, 400, 500],
     },
     display: 'swap', // Use font-display with swap
     preconnect: true, // Preconnect to Google Fonts
@@ -24,5 +29,16 @@ export default defineNuxtConfig({
   },
   content: {
     documentDriven: true
+  },
+  shadcn: {
+    /**
+     * Prefix for all the imported component
+     */
+    prefix: '',
+    /**
+     * Directory that the component lives in.
+     * @default "./components/ui"
+     */
+    componentDir: './components/ui'
   }
 })
