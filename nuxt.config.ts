@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'shadcn-nuxt',
     '@nuxtjs/color-mode',
-    '@vueuse/nuxt'
+    '@vueuse/motion/nuxt'
   ],
   googleFonts: {
     /* module options */
@@ -40,5 +40,14 @@ export default defineNuxtConfig({
      * @default "./components/ui"
      */
     componentDir: './components/ui'
-  }
+  },
+  tailwindcss: { 
+    cssPath: ['~/assets/css/tailwind.css', { injectPosition: 'first' }], 
+    configPath: 'tailwind.config', 
+    exposeConfig: { 
+      level: 2
+    }, 
+    config: {}, 
+    viewer: true, 
+  } 
 })

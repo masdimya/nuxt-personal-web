@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Button>Click me</Button>
     <!-- <div>
       <h1 class="text-2xl font-semibold ">Dimas Ikbalul Aulia</h1>      
       <div class=" text-sm mt-4  font-semibold">

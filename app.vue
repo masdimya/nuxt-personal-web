@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header />
+    <Hero />
     <main class="min-h-[calc(100vh-3rem)]">
       <NuxtPage />
     </main>
